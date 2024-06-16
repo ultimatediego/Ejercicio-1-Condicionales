@@ -7,3 +7,5 @@ function bello(){
         document.getElementsByClassName("rx1").innerHTML = "no te creo"
     }
 }
+
+console.log("Hola mundo")
