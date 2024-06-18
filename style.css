@@ -1,11 +1,14 @@
 *{
     padding: auto;
     margin: 0;
-    background-color: aquamarine;
+    background-color: rgba(202, 183, 77, 0.356);
     color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .titulo{
     background-color: brown;
     color: #ff0000;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
