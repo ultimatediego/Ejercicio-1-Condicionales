@@ -1,25 +1,24 @@
+
 function bello(){
     var respuesta = document.getElementById("x1").value;
     if (respuesta ==="si"){
-        document.getElementsByClassName("rx1").innerHTML = "ciertamente"
+        let cambio = document.getElementById("rx1")
+        cambio.innerHTML = "ciertamente"
     }
     else if (respuesta === "no"){
-        document.getElementsByClassName("rx1").innerHTML = "no te creo"
+        document.getElementById("rx1").innerHTML = "no te creo"
     }
-}
+};
 
-console.log("Hola mundo")
 
-let numero = document.getElementById("x2").value;
-
-function division(a){
-    if(a%2=== 0){
-        document.getElementsByClassName("rx2").innerHTML = "Su numero es divisible por 2"
+function division(){
+    var numero = document.getElementById("x2").value;
+    let convertido = parseInt(numero)
+    if(convertido%2=== 0){
+        document.getElementById("rx2").innerHTML = "Su numero es divisible por 2"
     }
 
-   else  if(a%2 !== 0){
-        document.getElementsByClassName("rx2").innerHTML = "Su numero no es divisible por 2"
+   else  if(convertido%2 !== 0){
+        document.getElementById("rx2").innerHTML = "Su numero no es divisible por 2"
     }
-}
-
-division(numero);
+};
