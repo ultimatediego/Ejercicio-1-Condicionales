@@ -7,8 +7,45 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .titulo{
-    background-color: brown;
+    background-color: rgba(177, 54, 54, 0);
     color: #ff0000;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 3em;
+    margin: 10px;
+    align-items: center;
+}
+.ejercicio{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 2em;
+    align-items: center;
+    width: 50%;
+    padding: 1em;
+    margin: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    
+}
+input{
+    margin: 2em;
+    background-color: rgba(176, 126, 189, 0.219);
+    border-radius: 2em;
+    width: 10em;
+}
+button{
+    background-color: rgb(179, 97, 5);
+    color: antiquewhite;
+    border-radius: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
 }

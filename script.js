@@ -21,6 +21,10 @@ function division(){
     }
 };
 
+function alerta(){
+    alert("su numero es par")
+}
+
 function premio(){
     var numero = document.getElementById("x4").value;
     let convertido = parseInt(numero)
@@ -56,3 +60,49 @@ function calcular2(){
         document.getElementById("rx6").innerHTML = a + " es igual "+b
     }
 };
+
+function whichDay(){
+    let day = document.getElementById("ax7").value
+    let dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+    if (dias.includes(day) === true){
+        if (day === "lunes"){
+        document.getElementById("rx7").innerHTML = "Ten un Excelente inicio de semana"
+        }
+        else if (day === "viernes"){
+            document.getElementById("rx7").innerHTML = "Uff.. Alfin viernes"
+        }
+        else if (day === "sabado" || day === "domingo"){
+            document.getElementById("rx7").innerHTML = "Descansa es fin de semana"
+        }
+        else{
+            document.getElementById("rx7").innerHTML = "Ten un buen dia"
+        }
+    }
+    else {
+        document.getElementById("rx7").innerHTML = "Usted no ingreso un dia valido"
+    }
+};
+
+function calificacion(){
+    let nota = parseInt(document.getElementById("ax8").value)
+    let notas = [1,2,3,4,5,6,7,8,9,10]
+    if (notas.includes(nota) === true){
+        if (nota < 6 ){
+            document.getElementById("rx8").innerHTML = "Reprobado"
+        }
+        else if (6 <= nota && nota <= 8 ){
+            document.getElementById("rx8").innerHTML = "Regular"
+        }
+        else if (nota === 9){
+            document.getElementById("rx8").innerHTML = "Bien"
+        }
+        else if (nota === 10){
+            document.getElementById("rx8").innerHTML = "Excelente"
+        }
+    }
+    else {
+        document.getElementById("rx8").innerHTML = "Usted no ingreso una calificacion valida"
+    }
+
+}
+    
