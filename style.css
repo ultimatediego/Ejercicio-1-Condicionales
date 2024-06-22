@@ -37,7 +37,7 @@ body{
     
 }
 
-.ejercicio1{
+.ejercicioD{
     display: flexbox;
     flex-direction: column;
     padding: 15px;
@@ -61,7 +61,7 @@ input{
     margin: 2em;
     background-color: rgba(176, 126, 189, 0.219);
     border-radius: 2em;
-    width: 20em;
+    width: 10em;
 }
 
 button{

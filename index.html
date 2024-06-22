@@ -69,7 +69,7 @@
         <p id="rx8"></p>
     </div>
 
-    <div class="ejercicio1">
+    <div class="ejercicioD">
         <h2>Elija que toping desea para su helado</h2>
         <label for="x91">Helado sin toping cuesta 50 MXN</label>
         <input type="checkbox" name="x91" id="ax91" class="check"> <br>
@@ -81,6 +81,54 @@
         <input type="checkbox" name="x94" id="ax94" class="check"> <br>
         <button onclick="eleccion()">Listo</button>
         <p id="rx9"></p>
+    </div>
+
+    <div class="ejercicioD">
+        <h2>Elija que programa desea estudiar </h2>
+        <p>Esto cuesta mensualmente cada programa</p>
+        <form action="">
+            <input type="radio" name="x101" id="ax101" value="Course: $4999 MXN">
+            <label for="ax101">Course: $4999 MXN</label><br>
+            <input type="radio" name="x101" id="ax102" value="Master: $2999 MXN"> 
+            <label for="ax102">Carrera: $3999 MXN</label><br>
+            <input type="radio" name="x101" id="ax103" value="Master: $2999 MXN">
+            <label for="ax103">Master: $2999 MXN</label><br>
+        </form>
+        
+        <form action="">
+            <h2>Cuenta usted con alguna beca?</h2>
+            <label for="x104">Beca Facebook: 20% de descuento.</label>
+            <input type="radio" name="x102" id="ax104" class="check"> <br>
+            <label for="x105">Beca Google: 15% de descuento.</label>
+            <input type="radio" name="x102" id="ax105" class="check"> <br>       
+            <label for="x106">Beca Jesua: 50% de descuento.</label>
+            <input type="radio" name="x102" id="ax106" class="check"> <br>
+        </form>
+        <p>Tenga en cuenta la duracion de los cursos es la siguente:</p>
+        <ul>
+            <li>Course: 2 meses</li>
+            <li>Carrera 6 meses</li>
+            <li>Master: 12 meses</li>
+        </ul>
+        <button onclick="beca()">Listo</button>
+        <p id="rx10"></p>
+    </div>
+
+    <div class="ejercicioD">
+        <h2>Total a pagar por vehiculo</h2>
+        <form action="">
+            <input type="radio" name="x111" id="ax111" value="Coche">
+            <label for="ax101">Coche</label><br>
+            <input type="radio" name="x111" id="ax112" value="Moto"> 
+            <label for="ax102">Moto</label><br>
+            <input type="radio" name="x111" id="ax113" value="Autobus">
+            <label for="ax103">Autobus</label><br>
+        </form>
+        <label for="ax114">Ingrese cuantos litros consumio:</label>
+        <input type="text" name="x112" id="ax114"><br>
+
+        <button onclick="consumoLitros()">Listo</button>
+        <p id="rx11"></p>
     </div>
 
 

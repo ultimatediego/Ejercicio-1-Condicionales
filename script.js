@@ -121,6 +121,10 @@ function eleccion(){
                     document.getElementById("rx9").innerHTML = "Su Helado con topings de: Oreo y KitKat, cuesta 75 MXN "
                 }
             }
+            else if (brownie.checked) {
+                document.getElementById("rx9").innerHTML = "Su Helado con topings de: Oreo y brownie cuesta 80 MXN "
+            }
+
             else {
                 document.getElementById("rx9").innerHTML = "Su Helado con toping de: Oreo, cuesta 60 MXN "
             }
@@ -143,4 +147,103 @@ function eleccion(){
     else{
         document.getElementById("rx9").innerHTML = "Por favor elija helado para agregar topings"
     }
+}
+
+function beca(){
+    let course = document.getElementById("ax101")
+    let carrera = document.getElementById("ax102")
+    let master = document.getElementById("ax103")
+    let becaF = document.getElementById("ax104")
+    let becaG = document.getElementById("ax105")
+    let becaJ = document.getElementById("ax106")
+
+    if(course.checked){
+        if(becaF.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $7,998.6 MXN"
+        }
+        else if(becaG.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $8,498.3 MXN"
+        }
+        else if(becaJ.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $4,999 MXN"
+        }
+        else{
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $9,998 MXN"
+        }
+    }
+    if(carrera.checked){
+        if(becaF.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $19,195.2 MXN"
+        }
+        else if(becaG.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $20,394.9 MXN"
+        }
+        else if(becaJ.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $11,997 MXN"
+        }
+        else{
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $23,994 MXN"
+        }
+    }
+    if(master.checked){
+        if(becaF.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $28,790.4 MXN"
+        }
+        else if(becaG.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $30,589.8 MXN"
+        }
+        else if(becaJ.checked){
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $17,994 MXN"
+        }
+        else{
+            document.getElementById("rx10").innerHTML = "El costo de su programa es: $35,988 MXN"
+        }
+    }
+
+}
+
+function consumoLitros(){
+    let coche = document.getElementById("ax111")
+    let moto = document.getElementById("ax112")
+    let autobus = document.getElementById("ax113")
+    let km = parseInt(document.getElementById("ax114").value)
+    const coche_precio = 0.20
+    const moto_precio = 0.10
+    const autobus_precio = 0.50
+
+    if (coche.checked){
+        if(km <= 100){
+            let costo = coche_precio*km + 5
+            document.getElementById("rx11").innerHTML = "El total a pagar es: "+ costo
+        }
+        else{
+            let costo = coche_precio*km + 10
+            document.getElementById("rx11").innerHTML = "El total a pagar es: "+ costo
+        }
+    }
+    else if (moto.checked){
+        if(km <= 100){
+            let costo = moto_precio*km + 5
+            document.getElementById("rx11").innerHTML = "El total a pagar es: "+ costo
+        }
+        else{
+            let costo = moto_precio*km + 10
+            document.getElementById("rx11").innerHTML = "El total a pagar es: "+ costo
+        }
+    }
+    else if (autobus.checked){
+        if(km <= 100){
+            let costo = autobus_precio*km + 5
+            document.getElementById("rx11").innerHTML = "El total a pagar es: "+ costo
+        }
+        else{
+            let costo = autobus_precio*km + 10
+            document.getElementById("rx11").innerHTML = "El total a pagar es: "+ costo
+        }
+    }
+    else{
+        document.getElementById("rx11").innerHTML = "Porfavor elija un coche"
+    }
+
+
 }
