@@ -105,4 +105,42 @@ function calificacion(){
     }
 
 }
-    
+
+function eleccion(){
+    let helado = document.getElementById("ax91")
+    let oreo = document.getElementById("ax92")
+    let Kitkat = document.getElementById("ax93")
+    let brownie = document.getElementById("ax94")
+    if (helado.checked){
+        if (oreo.checked){
+            if (Kitkat.checked){
+                if (brownie.checked){
+                    document.getElementById("rx9").innerHTML = "Su Helado con topings de: Oreo, KitKat y brownie, cuesta 95 MXN "
+                }
+                else{
+                    document.getElementById("rx9").innerHTML = "Su Helado con topings de: Oreo y KitKat, cuesta 75 MXN "
+                }
+            }
+            else {
+                document.getElementById("rx9").innerHTML = "Su Helado con toping de: Oreo, cuesta 60 MXN "
+            }
+        }
+        else if (Kitkat.checked){
+            if (brownie.checked){
+                document.getElementById("rx9").innerHTML = "Su Helado con topings de: KitKat y brownie, cuesta 85 MXN "
+            }
+            else{
+                document.getElementById("rx9").innerHTML = "Su Helado con toping de KitKat, cuesta 65 MXN "
+            }
+        }
+        else if (brownie.checked){
+            document.getElementById("rx9").innerHTML = "Su Helado con toping de brownie, cuesta 70 MXN "
+        }
+        else{
+            document.getElementById("rx9").innerHTML = "Su Helado cuesta 50 MXN"
+        }
+    }
+    else{
+        document.getElementById("rx9").innerHTML = "Por favor elija helado para agregar topings"
+    }
+}

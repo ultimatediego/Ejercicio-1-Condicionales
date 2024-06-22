@@ -36,12 +36,34 @@ body{
     font-size: x-large;
     
 }
+
+.ejercicio1{
+    display: flexbox;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 2em;
+    align-items: center;
+    width: 50%;
+    padding: 1em;
+    margin: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    
+}
 input{
     margin: 2em;
     background-color: rgba(176, 126, 189, 0.219);
     border-radius: 2em;
     width: 10em;
 }
+
+.check{
+    margin: 2em;
+    background-color: rgba(176, 126, 189, 0.219);
+    border-radius: 2em;
+    width: 20em;
+}
+
 button{
     background-color: rgb(179, 97, 5);
     color: antiquewhite;
