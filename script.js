@@ -21,9 +21,7 @@ function division(){
     }
 };
 
-function alerta(){
-    alert("su numero es par")
-}
+
 
 function premio(){
     var numero = document.getElementById("x4").value;
